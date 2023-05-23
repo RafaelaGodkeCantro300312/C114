@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(90deg, rgba(14,158,167,1) 0%, rgba(194,116,242,1) 50%, rgba(214,9,100,1) 100%);
+    text-align:center;
+}
+#button {
+    background-color:rgb(192, 41, 252);
+    border-radius:5px;
+    border-width:1.5px;
+}
+#h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+canvas {
+    animation-name:color;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+}
+@keyframes color {
+    from {box-shadow:1px 1px 38px rgb(52, 198, 251);}
+    to {box-shadow:1px 1px 38px rgb(168, 71, 241);}
+}
