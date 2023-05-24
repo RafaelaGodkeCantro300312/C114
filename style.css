@@ -12,10 +12,10 @@ body {
 }
 canvas {
     animation-name:color;
-    animation-duration:4s;
+    animation-duration:2s;
     animation-iteration-count:infinite;
 }
 @keyframes color {
-    from {box-shadow:1px 1px 38px rgb(52, 198, 251);}
-    to {box-shadow:1px 1px 38px rgb(168, 71, 241);}
+    from {box-shadow:1px 1px 38px rgb(1, 187, 254);}
+    to {box-shadow:1px 1px 38px rgb(88, 1, 155);}
 }
