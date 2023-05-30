@@ -1,5 +1,8 @@
-function preload() {
+noseX=0;
+noseY=0;
 
+function preload() {
+    bigode=loadImage('bigode.png');
 }
 
 function setup() {
@@ -16,6 +19,8 @@ function setup() {
 function gotPoses(results) {
     if(results.length>0) {
         console.log(results);
+        noseX=results[0].pose.nose.x-30;
+        noseY=results[0].pose.nose.y+8;
         console.log("noseX= "+results[0].pose.nose.x);
         console.log("noseY= "+results[0].pose.nose.y);
     }
@@ -27,6 +32,7 @@ function modelLoaded() {
 
 function draw() {
     image(video, 0, 0, 300, 300);
+    image(bigode, noseX, noseY, 70, 20);
 }
 
 function takeSnapshot() {
